@@ -7,11 +7,11 @@
         <div class="controls"><input id="url" type="text" value="" /></div>
       </div>
       <div class="control-group">
-        <label class="control-label">{{i18n "Title"}}</label>
-        <div class="controls"><input id="title" type="text" value="" /><a href="#" class="get-title-link inline-link">{{i18n "Suggest title"}}</a></div>
+        <label class="control-label">{{i18n "Project"}}</label>
+        <div class="controls"><input id="title" type="text" value="" /><a href="#" class="get-title-link inline-link">{{i18n ""}}</a></div>
       </div>
       <div class="control-group">
-        <label class="control-label">{{i18n "Body"}}</label>
+        <label class="control-label">{{i18n "Description"}}</label>
         <div class="controls" id="editor"><textarea id="body" value="" class="input-xlarge"/></div>
       </div>
       {{#if categoriesEnabled}}
@@ -58,12 +58,12 @@
             <label class="radio inline">
               <input id="status_approved" type="radio" value="2" name="status" checked /> {{i18n "Approved"}}
             </label>
-            <label class="radio inline">  
+            <label class="radio inline">
               <input id="status_rejected" type="radio" value="3" name="status"/> {{i18n "Rejected"}}
             </label>
           </div>
         </div>
-        {{/constant}} 
+        {{/constant}}
       {{/if}}
       <div class="form-actions">
         <input type="submit" value="{{i18n "Submit"}}" />

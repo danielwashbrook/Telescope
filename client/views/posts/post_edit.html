@@ -63,8 +63,8 @@
           <div class="control-group">
             <label class="control-label post-form-timestamp">{{i18n "Submission"}}</label>
             <div class="controls">
-              <p>{{i18n "Note: this post is still pending so it has no submission timestamp yet."}}</p>
-            </div>  
+              <p>{{i18n "Note: this project is still pending so it has no submission timestamp yet."}}</p>
+            </div>
           </div>
           {{/if}}
           <div class="control-group post-form-user">
@@ -86,14 +86,14 @@
               <label class="radio inline">
                 <input id="status_approved" type="radio" value="2" name="status" {{hasStatusApproved}} /> {{i18n "Approved"}}
               </label>
-              <label class="radio inline">  
+              <label class="radio inline">
                 <input id="status_rejected" type="radio" value="3" name="status" {{hasStatusRejected}} /> {{i18n "Rejected"}}
               </label>
             </div>
           </div>
         {{/if}}
         <div class="form-actions">
-          <a class="delete-link" href="/posts/deleted">{{i18n "Delete Post"}}</a>
+          <a class="delete-link" href="/posts/deleted">{{i18n "Delete Project"}}</a>
           <input type="submit" value="{{i18n "Submit"}}" />
         </div>
       </form>
