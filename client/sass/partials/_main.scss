@@ -2,7 +2,8 @@ html, body, .outer-wrapper{
 	height:100%;
 }
 body{
-	background:#e0f1f7;
+	// background:#e0f1f7;
+	background: url('/img/download.png');
 	// min-height:1500px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
@@ -11,6 +12,7 @@ body{
 		background-size:10px 10px;
 	}
 }
+
 .outer-wrapper{
 	position:relative;
 }
