@@ -46,6 +46,7 @@ Template.user_edit.events({
       "profile.name": name,
       "profile.slug": slugify(name),
       "profile.bio": $target.find('[name=bio]').val(),
+      "profile.project": $target.find('[name=project]').val(),
       "profile.email": $target.find('[name=email]').val(),
       "profile.twitter": $target.find('[name=twitter]').val(),
       "profile.github": $target.find('[name=github]').val(),
