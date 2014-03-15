@@ -21,7 +21,14 @@ Template.user_profile.helpers({
   },
   getGitHubName: function () {
     return getGitHubName(this);
+  },
+  getLinkedIn: function () {
+    return getLinkedIn(this);
+  },
+  getDribble: function () {
+    return getDribble(this);
   }
+
 });
 
 Template.user_profile.events({

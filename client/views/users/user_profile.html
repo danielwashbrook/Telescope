@@ -1,5 +1,8 @@
 <template name="user_profile">
 	<div class="grid">
+		<div class="rockstar">
+			Jason ROCKSTAR Graphic here!!!
+		</div>
 		{{#with user}}
 		<div class="user-profile grid-block">
 			<table>
@@ -42,6 +45,18 @@
 					<tr>
 						<td>{{i18n "GitHub"}}:</td>
 						<td><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></td>
+					</tr>
+				{{/if}}
+				{{#if getLinkedIn}}
+					<tr>
+						<td>{{i18n "LinkedIn"}}:</td>
+						<td><a href="http://www.linkedin.com/{{getLinkedIn}}">{{getLinkedIn}}</a></td>
+					</tr>
+				{{/if}}
+				{{#if getDribble}}
+					<tr>
+						<td>{{i18n "Dribble"}}:</td>
+						<td><a href="http://dribble.com/{{getDribble}}">{{getDribble}}</a></td>
 					</tr>
 				{{/if}}
 				{{#if site}}
