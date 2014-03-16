@@ -1,4 +1,5 @@
 .user-profile {
+  clear: both;
 	.user-avatar{
 		height:80px;
 		width:80px;
@@ -40,7 +41,6 @@
   }
 
   .social {
-    clear: both;
     h3 {
       color: #3a3a3a;
       margin: 0;
@@ -50,22 +50,22 @@
       float: left;
     }
     .twitter {
-      background: url('/img/') no-repeat;
+      background: url('/img/social_twitter.png') no-repeat;
       width: 24px;
       height: 24px;
     }
     .linkedin {
-      background: url('/img/') no-repeat;
+      background: url('/img/social_linkedin.png') no-repeat;
       width: 24px;
       height: 24px;
     }
     .github {
-      background: url('/img/') no-repeat;
+      background: url('/img/social_github.png') no-repeat;
       width: 24px;
       height: 24px;
     }
     .dribble {
-      background: url('/img/') no-repeat;
+      background: url('/img/social_dribble.png') no-repeat;
       width: 24px;
       height: 24px;
     }
