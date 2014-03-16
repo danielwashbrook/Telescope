@@ -50,6 +50,23 @@
     {{#if body}}
       <div class="post-message markdown">{{{body_formatted}}}</div>
     {{/if}}
+    {{#if target_market}}
+      <div class="target_market markdown">{{{target_market}}}</div>
+    {{/if}}
+    <div class="links">
+    {{#if url_new}}
+      <div class="url_new markdown">{{{url_new}}}</div>
+    {{/if}}
+    {{#if twitter}}
+      <div class="twitter markdown">{{{twitter}}}</div>
+    {{/if}}
+    {{#if indiegogo}}
+      <div class="indiegogo markdown">{{{indiegogo}}}</div>
+    {{/if}}
+    {{#if kickstarter}}
+      <div class="kickstarter markdown">{{{kickstarter}}}</div>
+    {{/if}}
+    </div>
   </div>
   {{/with}}
 </template>

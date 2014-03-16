@@ -80,6 +80,11 @@ Template.post_edit.events({
     var post = this;
     var categories = [];
     var url = $('#url').val();
+    var url_new = $('#url_new').val();
+    var target_market = $('#target_market').val();
+    var twitter = $('#twitter').val();
+    var indiegogo = $('#indiegogo').val();
+    var kickstarter = $('#kickstarter').val();
     var shortUrl = $('#short-url').val();
     var status = parseInt($('input[name=status]:checked').val());
 
@@ -139,7 +144,7 @@ Template.post_edit.events({
     var post = this;
 
     e.preventDefault();
-    
+
     if(confirm("Are you sure?")){
       Meteor.call("deletePostById", post._id, function(error) {
         if (error) {
