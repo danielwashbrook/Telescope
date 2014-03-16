@@ -798,6 +798,11 @@ body.pageslide-open .posts {
   margin: 0 auto;
 }
 
+/* line 108, ../sass/partials/_grid.scss */
+.grid-block.form-horizontal, .form-horizontal.post-content, .post-actions li a.form-horizontal, .form-horizontal.post-message, .form-horizontal.comment-content, .form-horizontal.comment-new, .form-horizontal.error {
+  margin-top: 50px;
+}
+
 /* line 11, ../sass/modules/_header.scss */
 .header {
   margin-bottom: 10px;
@@ -988,8 +993,9 @@ body.pageslide-open .posts {
 .search {
   position: relative;
   float: right;
+  margin-right: 15px;
 }
-/* line 164, ../sass/modules/_header.scss */
+/* line 165, ../sass/modules/_header.scss */
 .search .search-field {
   font-size: 14px;
   padding: 0 12px;
@@ -1003,19 +1009,19 @@ body.pageslide-open .posts {
   border-radius: 4px;
   color: #898989;
 }
-/* line 178, ../sass/modules/_header.scss */
+/* line 179, ../sass/modules/_header.scss */
 .search .search-field:focus {
   outline: none;
 }
-/* line 183, ../sass/modules/_header.scss */
+/* line 184, ../sass/modules/_header.scss */
 .search.empty .search-field {
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 185, ../sass/modules/_header.scss */
+/* line 186, ../sass/modules/_header.scss */
 .search.empty .search-field:focus {
   background: white;
 }
-/* line 189, ../sass/modules/_header.scss */
+/* line 190, ../sass/modules/_header.scss */
 .search.empty .search-clear {
   display: none;
 }
