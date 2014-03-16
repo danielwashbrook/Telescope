@@ -1,82 +1,94 @@
 <template name="user_profile">
-	<div class="grid">
-		<div class="rockstar">
-			Jason ROCKSTAR Graphic here!!!
-		</div>
 		{{#with user}}
-		<div class="user-profile grid-block">
-			<table>
-				<tr>
-					<td colspan="2"><img class="user-avatar" src="{{avatarUrl}}"/></td>
-				</tr>
-				{{#if isAdmin}}
-					<tr>
-						<td>{{i18n "ID"}}: </td>
-						<td>{{_id}}</td>
-					</tr>
-				{{/if}}
-				<tr>
-					<td>{{i18n "Name:"}}</td>
-					<td>{{profile.name}}</td>
-				</tr>
-				<tr>
-					<td>{{i18n "Member since"}}:</td>
-					<td>{{createdAtFormatted}}</td>
-				</tr>
-				<tr>
-					<td>{{i18n "Role:"}}</td>
-					<td>{{profile.role}}</td>
-				</tr>
-				<tr>
-					<td>{{i18n "Bio:"}}</td>
-					<td>{{profile.bio}}</td>
-				</tr>
-				<tr>
-					<td>{{i18n "Project:"}}</td>
-					<td>{{profile.project}}</td>
-				</tr>
+	<div class="grid">
+
+		<div class="header-user">
+			<img class="user-avatar" src="{{avatarUrl}}"/>
+
+			<div class="name">
+				<label>{{i18n "Name:"}}</label>
+				<div class='profile-name'>{{profile.name}}</div>
+			</div>
+
+			{{#if isAdmin}}
+				<div class="name">
+					<label>{{i18n "ID:"}}</label>
+					<div class='profile-name'>{{_id}}</div>
+				</div>
+				<div class="member">
+					<label>{{i18n "Member since"}}:</label>
+					<div>{{createdAtFormatted}}</div>
+				</div>
+			{{/if}}
+
+			<div class="role">
+				<label>{{i18n "Role:"}}</label>
+				<span>{{profile.role}}</span>
+			</div>
+			<div class="rockstar">
+				Rockstart graphic
+			</div>
+		</div>
+
+		<div class="bio-content">
+			<div class="bio">
+				<label>{{i18n "Bio:"}}</label>
+				<div class="profile-bio content-block">{{profile.bio}}</span>
+			</div>
+
+			<div class="projects">
+				<label>{{i18n "Project:"}}</label>
+				<div class="profile-project content-block">{{profile.project}}</div>
+			</div>
+		</div>
+
+		<div class="social">
 				{{#if getTwitterName}}
-					<tr>
-						<td>Twitter: </td>
-						<td><a href="http://twitter.com/{{getTwitterName}}">{{getTwitterName}}</a></td>
-					</tr>
+					<div class="twitter">
+						<label>Twitter: </label>
+						<div><a href="http://twitter.com/{{getTwitterName}}">{{getTwitterName}}</a></div>
+					</div>
 				{{/if}}
 				{{#if getGitHubName}}
-					<tr>
-						<td>{{i18n "GitHub"}}:</td>
-						<td><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></td>
-					</tr>
+					<div class="github">
+						<label>{{i18n "GitHub"}}:</label>
+						<div><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></div>
+					</div>
 				{{/if}}
 				{{#if getLinkedIn}}
-					<tr>
-						<td>{{i18n "LinkedIn"}}:</td>
-						<td><a href="http://www.linkedin.com/{{getLinkedIn}}">{{getLinkedIn}}</a></td>
-					</tr>
+					<div class="linkedin">
+						<label>{{i18n "LinkedIn"}}:</label>
+						<div><a href="http://www.linkedin.com/{{getLinkedIn}}">{{getLinkedIn}}</a></div>
+					</div>
 				{{/if}}
 				{{#if getDribble}}
-					<tr>
-						<td>{{i18n "Dribble"}}:</td>
-						<td><a href="http://dribble.com/{{getDribble}}">{{getDribble}}</a></td>
-					</tr>
+					<div class="dribble">
+						<label>{{i18n "Dribble"}}:</label>
+						<div><a href="http://dribble.com/{{getDribble}}">{{getDribble}}</a></div>
+					</div>
 				{{/if}}
 				{{#if site}}
-					<tr>
-						<td>{{i18n "Site"}}:</td>
-						<td><a href="{{profile.site}}">{{profile.site}}</a></td>
-					</tr>
+					<div class="site">
+						<label>{{i18n "Site"}}:</label>
+						<div><a href="{{profile.site}}">{{profile.site}}</a></div>
+					</div>
 				{{/if}}
-			</table>
-			{{#if canEditProfile}}
-				<a class="button inline" href="/users/{{slug}}/edit">{{i18n "Edit profile"}}</a>
-			{{/if}}
-			{{#if canInvite}}
-				{{#if inviteCount}}
-					<a class="button inline invite-link" href="#">{{i18n "Invite"}} ({{inviteCount}} {{i18n "left"}})</a>
-				{{else}}
-					<a class="button inline disabled" href="#">{{i18n "Invite (none left)"}}</a>
+			</div>
+
+			<div class="user-profile grid-block">
+				{{#if canEditProfile}}
+					<a class="button inline" href="/users/{{slug}}/edit">{{i18n "Edit profile"}}</a>
 				{{/if}}
-			{{/if}}
+				{{#if canInvite}}
+					{{#if inviteCount}}
+						<a class="button inline invite-link" href="#">{{i18n "Invite"}} ({{inviteCount}} {{i18n "left"}})</a>
+					{{else}}
+						<a class="button inline disabled" href="#">{{i18n "Invite (none left)"}}</a>
+					{{/if}}
+				{{/if}}
+			</div>
 		</div>
 		{{/with}}
+
 	</div>
 </template>
