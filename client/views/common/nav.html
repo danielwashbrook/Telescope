@@ -15,29 +15,15 @@
 
     <ul class="nav site-nav desktop">
     
-     {{#if isAdmin}}
-      <ul>
-        <li class="dropdown">
-          <a class="admin" href="/">{{i18n "Administration"}}</a>
-          <div class="dropdown-menu">
-            <ul role="menu" aria-labelledby="dLabel">
-              <li><a class="pending" href="/pending">{{i18n "Pending"}}</a></li>
-              <li><a class="users" href="/all-users">{{i18n "Users"}}</a></li>
-              <li><a class="settings" href="/settings">{{i18n "Settings"}}</a></li>
-              <li><a class="categories" href="/categories">{{i18n "Categories"}}</a></li>
-              <li><a class="logs" href="/logs">{{i18n "Logs"}}</a></li>
-              <li><a class="categories" href="/toolbox">{{i18n "Toolbox"}}</a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-      {{/if}}
+     
     
       {{#if canView}}
       <ul class="nav user-nav desktop">
         <li><a id="submit" class="submit button" href="/submit">{{i18n "Create Project"}}</a></li>
       </ul>
       {{/if}}
+      
+
 
       <div class="auth-buttons">
         {{loginButtons align="right"}}
@@ -56,6 +42,24 @@
           <li><a class="digest" href="/digest">{{i18n "Digest"}}</a></li>
         </ul>
         {{/if}}
+        
+      {{#if isAdmin}}
+      <ul>
+        <li class="dropdown">
+          <a class="admin" href="/">{{i18n "Administration"}}</a>
+          <div class="dropdown-menu">
+            <ul role="menu" aria-labelledby="dLabel">
+              <li><a class="pending" href="/pending">{{i18n "Pending"}}</a></li>
+              <li><a class="users" href="/all-users">{{i18n "Users"}}</a></li>
+              <li><a class="settings" href="/settings">{{i18n "Settings"}}</a></li>
+              <li><a class="categories" href="/categories">{{i18n "Categories"}}</a></li>
+              <li><a class="logs" href="/logs">{{i18n "Logs"}}</a></li>
+              <li><a class="categories" href="/toolbox">{{i18n "Toolbox"}}</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      {{/if}}
 
         {{> search}}
       </div>
