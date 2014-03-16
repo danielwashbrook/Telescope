@@ -1,17 +1,19 @@
 <template name="user_profile">
 		{{#with user}}
-	<div class="grid">
+	<div class="grid user-profile">
 
 		<div class="header-user">
-			<img class="user-avatar" src="{{avatarUrl}}"/>
+			<div class="bio-img">
+				<img class="user-avatar" src="{{avatarUrl}}"/>
+			</div>
 
 			<div class="name">
-				<label>{{i18n "Name:"}}</label>
+<!-- 				<label>{{i18n "Name:"}}</label> -->
 				<div class='profile-name'>{{profile.name}}</div>
 			</div>
 
 			{{#if isAdmin}}
-				<div class="name">
+				<div class="id">
 					<label>{{i18n "ID:"}}</label>
 					<div class='profile-name'>{{_id}}</div>
 				</div>
@@ -32,45 +34,32 @@
 
 		<div class="bio-content">
 			<div class="bio">
-				<label>{{i18n "Bio:"}}</label>
-				<div class="profile-bio content-block">{{profile.bio}}</span>
+				<div class="profile-bio content-block">{{profile.bio}}</div>
 			</div>
 
 			<div class="projects">
-				<label>{{i18n "Project:"}}</label>
+				<div class="project-label">{{i18n "Projects:"}}</div>
 				<div class="profile-project content-block">{{profile.project}}</div>
 			</div>
 		</div>
 
 		<div class="social">
+			<h3>Social:</h3>
 				{{#if getTwitterName}}
-					<div class="twitter">
-						<label>Twitter: </label>
-						<div><a href="http://twitter.com/{{getTwitterName}}">{{getTwitterName}}</a></div>
-					</div>
+						<a href="http://twitter.com/{{getTwitterName}}" class="twitter">{{getTwitterName}}</a>
 				{{/if}}
 				{{#if getGitHubName}}
-					<div class="github">
-						<label>{{i18n "GitHub"}}:</label>
-						<div><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></div>
-					</div>
+						<a href="http://github.com/{{getGitHubName}}" class="github">{{getGitHubName}}</a>
 				{{/if}}
 				{{#if getLinkedIn}}
-					<div class="linkedin">
-						<label>{{i18n "LinkedIn"}}:</label>
-						<div><a href="http://www.linkedin.com/{{getLinkedIn}}">{{getLinkedIn}}</a></div>
-					</div>
+						<a href="http://www.linkedin.com/{{getLinkedIn}}" class="linkedin">{{getLinkedIn}}</a>
 				{{/if}}
 				{{#if getDribble}}
-					<div class="dribble">
-						<label>{{i18n "Dribble"}}:</label>
-						<div><a href="http://dribble.com/{{getDribble}}">{{getDribble}}</a></div>
-					</div>
+						<a href="http://dribble.com/{{getDribble}}" class="dribble">{{getDribble}}</a>
 				{{/if}}
 				{{#if site}}
 					<div class="site">
-						<label>{{i18n "Site"}}:</label>
-						<div><a href="{{profile.site}}">{{profile.site}}</a></div>
+						<a href="{{profile.site}}">{{profile.site}}</a>
 					</div>
 				{{/if}}
 			</div>

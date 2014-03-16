@@ -6,3 +6,78 @@
 		@include border-radius(80px);
 	}
 }
+
+.grid.user-profile {
+  margin-top: 50px;
+  label {
+    float: left;
+    margin-right: 3px;
+  }
+
+  .header-user {
+    position: relative;
+    margin: 0 15px 15px 15px;
+    min-height: 100px;
+    .bio-img {
+      float: left;
+      padding: 0 10px 10px 0;
+    }
+
+    .rockstar {
+      position: absolute;
+      top: 20px;
+      right: 0;
+    }
+  }
+
+  .bio-content {
+    margin-bottom: 40px;
+    .projects {
+      .project-label {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .social {
+    clear: both;
+    h3 {
+      color: #3a3a3a;
+      margin: 0;
+    }
+    a {
+      text-indent: -9999px;
+      float: left;
+    }
+    .twitter {
+      background: url('/img/') no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+    .linkedin {
+      background: url('/img/') no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+    .github {
+      background: url('/img/') no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+    .dribble {
+      background: url('/img/') no-repeat;
+      width: 24px;
+      height: 24px;
+    }
+    .site {
+      clear: both;
+      display: block;
+      a {
+        color: #76d1e4;
+      }
+    }
+
+  }
+
+}
+

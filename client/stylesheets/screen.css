@@ -2051,6 +2051,88 @@ table thead tr td, table thead tr th {
   border-radius: 80px;
 }
 
+/* line 10, ../sass/modules/_user-profile.scss */
+.grid.user-profile {
+  margin-top: 50px;
+}
+/* line 12, ../sass/modules/_user-profile.scss */
+.grid.user-profile label {
+  float: left;
+  margin-right: 3px;
+}
+/* line 17, ../sass/modules/_user-profile.scss */
+.grid.user-profile .header-user {
+  position: relative;
+  margin: 0 15px 15px 15px;
+  min-height: 100px;
+}
+/* line 21, ../sass/modules/_user-profile.scss */
+.grid.user-profile .header-user .bio-img {
+  float: left;
+  padding: 0 10px 10px 0;
+}
+/* line 26, ../sass/modules/_user-profile.scss */
+.grid.user-profile .header-user .rockstar {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+/* line 33, ../sass/modules/_user-profile.scss */
+.grid.user-profile .bio-content {
+  margin-bottom: 40px;
+}
+/* line 36, ../sass/modules/_user-profile.scss */
+.grid.user-profile .bio-content .projects .project-label {
+  font-weight: bold;
+}
+/* line 42, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social {
+  clear: both;
+}
+/* line 44, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social h3 {
+  color: #3a3a3a;
+  margin: 0;
+}
+/* line 48, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social a {
+  text-indent: -9999px;
+  float: left;
+}
+/* line 52, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social .twitter {
+  background: url("/img/") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+/* line 57, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social .linkedin {
+  background: url("/img/") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+/* line 62, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social .github {
+  background: url("/img/") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+/* line 67, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social .dribble {
+  background: url("/img/") no-repeat;
+  width: 24px;
+  height: 24px;
+}
+/* line 72, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social .site {
+  clear: both;
+  display: block;
+}
+/* line 75, ../sass/modules/_user-profile.scss */
+.grid.user-profile .social .site a {
+  color: #76d1e4;
+}
+
 /* line 1, ../sass/modules/_errors.scss */
 .error {
   margin-bottom: 10px;
