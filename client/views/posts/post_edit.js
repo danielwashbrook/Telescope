@@ -84,6 +84,7 @@ Template.post_edit.events({
     var target_market = $('#target_market').val();
     var twitter = $('#twitter').val();
     var indiegogo = $('#indiegogo').val();
+    var project_summary = $('#project_summary').val();
     var kickstarter = $('#kickstarter').val();
     var shortUrl = $('#short-url').val();
     var status = parseInt($('input[name=status]:checked').val());
@@ -107,6 +108,7 @@ Template.post_edit.events({
       url_new:         url_new,
       kickstarter:         kickstarter,
       twitter:         twitter,
+      project_summary:         project_summary,
       indiegogo:         indiegogo,
       body:             instance.editor.exportFile(),
       categories:       categories,

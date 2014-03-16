@@ -45,6 +45,9 @@
             | {{i18n "status"}}: {{status}}</span>, {{i18n "votes"}}: {{votes}}, {{i18n "baseScore"}}: {{baseScore}}, {{i18n "score"}}: {{short_score}}, {{i18n "clicks"}}: {{clicks}}
           {{/if}}
         </p>
+        {{#if project_summary}}
+          <div class="project-summary">{{{project_summary}}}</div>
+        {{/if}}
       </div>
     </div>
     {{#if body}}

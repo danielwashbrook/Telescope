@@ -55,6 +55,7 @@ Template.post_submit.events({
     var twitter = $('#twitter').val();
     var shortUrl = $('#short-url').val();
     var body = instance.editor.exportFile();
+    var project_summary = $('#project_summary').val();
     var target_market = $('#target_market').val();
     var categories=[];
     var sticky=!!$('#sticky').attr('checked');
@@ -71,6 +72,7 @@ Template.post_submit.events({
     var properties = {
         headline: title
       , body: body
+      , project_summary: project_summary
       , shortUrl: shortUrl
       , logo: logo
       , budget: budget
