@@ -3,7 +3,7 @@ html, body, .outer-wrapper{
 }
 body{
 	// background:#e0f1f7;
-	background: url('/img/download.png');
+	background: url('/img/bg.jpg') repeat-x top left;
 	// min-height:1500px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5){
@@ -18,7 +18,14 @@ body{
 }
 .content-wrapper{
 	padding-bottom:10px;
+	ul li {
+		float: left;
+		margin-right: 15px;
+		margin-left: 15px;
+
+	}
 }
+
 #spinner{
 	margin: 100px 0;
 }
@@ -52,3 +59,5 @@ body{
 #loading{
 	height:300px;
 }
+
+.url-old { display: none; }
