@@ -8,7 +8,7 @@ Template.post_item.helpers({
     return this.post || this;
   },
   postLink: function(){
-    return !!this.url ? getOutgoingUrl(this.url) : "/posts/"+this._id;
+    return "/posts/"+this._id;
   },
   postTarget: function() {
     return !!this.url ? '_blank' : '';
@@ -46,7 +46,7 @@ Template.post_item.helpers({
     return html_body.autoLink();
   },
   ago: function(){
-    // if post is approved show submission time, else show creation time. 
+    // if post is approved show submission time, else show creation time.
     time = this.status == STATUS_APPROVED ? this.submitted : this.createdAt;
     return moment(time).fromNow();
   },
@@ -56,7 +56,7 @@ Template.post_item.helpers({
   },
   voted: function(){
     var user = Meteor.user();
-    if(!user) return false; 
+    if(!user) return false;
     return _.include(this.upvoters, user._id);
   },
   userAvatar: function(){
@@ -87,9 +87,9 @@ var recalculatePosition = function ($object, pArray) {
     // send object back to previous position
     $object.removeClass('animate').css("top", delta + "px");
     // then wait a little and animate it to new one
-    setTimeout(function() { 
+    setTimeout(function() {
       $object.addClass('animate').css("top", "0px")
-    }, 1);  
+    }, 1);
   }
 }
 
