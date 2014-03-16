@@ -42,6 +42,8 @@ Template.post_submit.events({
 
     var title= $('#title').val();
     var url = $('#url').val();
+    var budget = $('#budget').val();
+    var logo = $('#logo').val();
     var url_new = $('#url_new').val();
     var indiegogo = $('#indiegogo').val();
     var kickstarter = $('#kickstarter').val();
@@ -63,6 +65,8 @@ Template.post_submit.events({
         headline: title
       , body: body
       , shortUrl: shortUrl
+      , logo: logo
+      , budget: budget
       , target_market: target_market
       , url_new: url_new
       , twitter: twitter

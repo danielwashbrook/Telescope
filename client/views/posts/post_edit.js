@@ -103,6 +103,11 @@ Template.post_edit.events({
     var properties = {
       headline:         $('#title').val(),
       shortUrl:         shortUrl,
+      target_market:         target_market,
+      url_new:         url_new,
+      kickstarter:         kickstarter,
+      twitter:         twitter,
+      indiegogo:         indiegogo,
       body:             instance.editor.exportFile(),
       categories:       categories,
     };
