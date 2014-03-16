@@ -114,7 +114,8 @@
 			font-weight:normal;
 			line-height:1;
 			&:visited{
-				color:$grey;
+				// color:$grey;
+				color: #3a3a3a;
 			}
 			&:hover{
 				color:$red;
@@ -144,6 +145,10 @@
 		font-size:13px;
 		color:$light-text;
 		line-height:1.5;
+	}
+	.project-summary {
+		color: #a4a9ab;
+		margin-top: 5px;
 	}
 }
 .post-actions{
@@ -282,7 +287,8 @@
 }
 .post.sticky{
 	.post-content, .post-actions li a{
-		background:$light-yellow;
+		// background:$light-yellow;
+		background: #f0f6fe;
 	}
 	.post-actions li a:hover{
 		background:$highlight-color url("/img/bg-header.png") top center;
