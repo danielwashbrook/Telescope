@@ -42,8 +42,13 @@ Template.post_submit.events({
 
     var title= $('#title').val();
     var url = $('#url').val();
+    var url_new = $('#url_new').val();
+    var indiegogo = $('#indiegogo').val();
+    var kickstarter = $('#kickstarter').val();
+    var twitter = $('#twitter').val();
     var shortUrl = $('#short-url').val();
     var body = instance.editor.exportFile();
+    var target_market = $('#target_market').val();
     var categories=[];
     var sticky=!!$('#sticky').attr('checked');
     var submitted = $('#submitted_hidden').val();
@@ -58,6 +63,11 @@ Template.post_submit.events({
         headline: title
       , body: body
       , shortUrl: shortUrl
+      , target_market: target_market
+      , url_new: url_new
+      , twitter: twitter
+      , indiegogo: indiegogo
+      , kickstarter: kickstarter
       , categories: categories
       , sticky: sticky
       , submitted: submitted
