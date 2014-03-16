@@ -798,7 +798,13 @@ body.pageslide-open .posts {
   margin: 0 auto;
 }
 
-/* line 108, ../sass/partials/_grid.scss */
+/* line 27, ../sass/partials/_grid.scss */
+.grid-medium {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/* line 112, ../sass/partials/_grid.scss */
 .grid-block.form-horizontal, .form-horizontal.post-content, .post-actions li a.form-horizontal, .form-horizontal.post-message, .form-horizontal.comment-content, .form-horizontal.comment-new, .form-horizontal.error {
   margin-top: 50px;
 }
