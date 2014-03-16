@@ -15,6 +15,10 @@
 		margin-left:24%;
 		margin-right:2%;
 	}
+	&.list,
+	&.single-post {
+		margin-top: 50px;
+	}
 }
 .grid-small{
 	width:320px;
@@ -51,14 +55,14 @@ $break-large: 1200px;
 
 			}
 			.tagline{
-				@include span-columns($cols - 1 omega, $cols);		
+				@include span-columns($cols - 1 omega, $cols);
 			}
 		}
 		.project{
 			@include span-columns(1, $cols);
 			&:nth-child(#{$cols+"n +"+$cols}){
 				@include span-columns(1 omega, $cols);
-			}	
+			}
 		}
 		.project{
 			margin-bottom:$gut-width*2;
@@ -96,7 +100,7 @@ $large-max-width:1200px;
 	$breakpoint: $min-width $cols;
 	@include grid($name, $breakpoint, $cols, $col-width, $gutter, $margin);
 	@include at-breakpoint($breakpoint){
-		
+
 	}
 }
 // @include large;

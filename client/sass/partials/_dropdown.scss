@@ -34,4 +34,7 @@
 			display:block;
 		}
 	}
+	&.admin {
+		z-index: 2;
+	}
 }

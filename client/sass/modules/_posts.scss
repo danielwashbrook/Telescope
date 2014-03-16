@@ -23,8 +23,7 @@
 	@extend .grid-block;
 	padding:0;
 	min-height:$grid-unit - 30px;
-	// margin-right:240px;
-	margin-right:160px;
+	margin-right:240px;
 	.post-info{
 		padding:$grid-padding - 2px $grid-padding;
 		margin-left:30px;
@@ -119,7 +118,7 @@
 			}
 			&:hover{
 				color:$red;
-			}	
+			}
 		}
 		.post-domain{
 			color:$light-text;
@@ -287,7 +286,7 @@
 	}
 	.post-actions li a:hover{
 		background:$highlight-color url("/img/bg-header.png") top center;
-	}	
+	}
 }
 .more-button{
 	position:relative;
