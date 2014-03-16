@@ -27,7 +27,10 @@ Template.user_profile.helpers({
   },
   getDribble: function () {
     return getDribble(this);
-  }
+  },
+  getBehance: function () {
+    return getBehance(this);
+  },
 
 });
 

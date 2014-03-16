@@ -11,6 +11,9 @@ Template.user_edit.helpers({
   getTwitter: function(){
     return getTwitterName(this) || "";
   },
+  getBehance: function(){
+    return getBehanceName(this) || "";
+  },
   getGitHub: function(){
     return getGitHubName(this) || "";
   },
@@ -59,6 +62,7 @@ Template.user_edit.events({
       "profile.github": $target.find('[name=github]').val(),
       "profile.dribble": $target.find('[name=dribble]').val(),
       "profile.linkedin": $target.find('[name=linkedin]').val(),
+      "profile.behance": $target.find('[name=behance]').val(),
       "profile.site": $target.find('[name=site]').val(),
       "profile.notifications.users": $('input[name=notifications_users]:checked').length, // only actually used for admins
       "profile.notifications.posts": $('input[name=notifications_posts]:checked').length,
