@@ -61,6 +61,12 @@
     </div>
     <div class="links post-message">
       <h3>Links</h3>
+    {{#if start_date}}
+      <div class="url_new markdown">{{{start_date}}}</div>
+    {{/if}}
+    {{#if launch_date}}
+      <div class="url_new markdown">{{{launch_date}}}</div>
+    {{/if}}
     {{#if url_new}}
       <div class="url_new markdown">{{{url_new}}}</div>
     {{/if}}

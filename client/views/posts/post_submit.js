@@ -24,7 +24,12 @@ Template.post_submit.rendered = function(){
   $('#submitted').datepicker().on('changeDate', function(ev){
     $('#submitted_hidden').val(moment(ev.date).valueOf());
   });
-
+  $('#start_date').datepicker().on('changeDate', function(ev){
+    $('#startdate_hidden').val(moment(ev.date).valueOf());
+  });
+  $('#launch_date').datepicker().on('changeDate', function(ev){
+    $('#launchdate_hidden').val(moment(ev.date).valueOf());
+  });
   $("#postUser").selectToAutocomplete();
 
 }
@@ -54,6 +59,8 @@ Template.post_submit.events({
     var categories=[];
     var sticky=!!$('#sticky').attr('checked');
     var submitted = $('#submitted_hidden').val();
+    var start_date = $('#startdate_hidden').val();
+    var launch_date = $('#launchdate_hidden').val();
     var userId = $('#postUser').val();
     var status = parseInt($('input[name=status]:checked').val());
 
@@ -75,6 +82,8 @@ Template.post_submit.events({
       , categories: categories
       , sticky: sticky
       , submitted: submitted
+      , start_date: start_date
+      , launch_date: launch_date
       , userId: userId
       , status: status
     };
